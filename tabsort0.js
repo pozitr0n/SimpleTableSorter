@@ -40,11 +40,11 @@
   if (i !== t.sorted) {
    t.sarr = []
    for (j; j < l; j++) {
-    c = rows[j].cells[i]
-    v = (c) ? (c.innerHTML.replace(/\<[^<>]+?\>/g, "")) : ""
-    vi = Math.round(100 * parseFloat(v)).toString()
-    if (!isNaN(vi)) while (vi.length < 10) vi = "0" + vi
-    else vi = v
+     c = rows[j].cells[i]
+     v = (c) ? (c.innerHTML.replace(/\<[^<>]+?\>/g, "")) : ""
+     vi = Math.round(100 * parseFloat(v)).toString()
+     if (!isNaN(vi)) while (vi.length < 10) vi = "0" + vi
+      else vi = v
     t.sarr[j] = [vi, rows[j]]
    }
   }
